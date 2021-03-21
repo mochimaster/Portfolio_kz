@@ -7,7 +7,7 @@
 <html>
   <head>
     <title>3-clipse</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -24,7 +24,8 @@
       <!-- Header -->
       <header id="header">
         <div class="logo">
-          <span class="icon fa-gem"></span>
+          <!-- <span class="icon fa-gem"></span> -->
+          <span class="icon"><img src="images/logo.png" alt="" /></span>
         </div>
         <div class="content">
           <div class="inner">
@@ -44,6 +45,7 @@
             <li><a href="#intro">Intro</a></li>
             <li><a href="#work">Workstation</a></li>
             <li><a href="#about">OUR SERVICES</a></li>
+            <li><a href="#visual">Visual</a></li>
             <li><a href="#contact">Contact</a></li>
             <!--<li><a href="#elements">Elements</a></li>-->
           </ul>
@@ -55,11 +57,7 @@
         <!-- Intro -->
         <article id="intro">
           <h2 class="major">Intro</h2>
-          <span class="image main"
-            ><img
-              src="images/pic01.jpg"
-              alt=""
-          /></span>
+          <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
           <p>
             We are ThreEclipse, and we are specialized in customizing office
             automation, audio & visual equipment, ensuring we have the right
@@ -72,7 +70,9 @@
         <!-- Work -->
         <article id="work">
           <h2 class="major">Workstation</h2>
-          <span id="workstation-picture" class="image main"><img src="images/pic02.jpg" alt="" /></span>
+          <span id="workstation-picture" class="image main"
+            ><img src="images/pic02.jpg" alt=""
+          /></span>
           <p>
             We work with multiple brands to suit your every need, may it be
             laptops, desktops, even customized top of the line PCs
@@ -82,17 +82,117 @@
         <!-- About -->
         <article id="about">
           <h2 class="major">Our Services</h2>
-          <span class="image main"
-            ><img
-              src="images/pic03.jpg"
-              alt=""
-          /></span>
+          <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
           <p>
             We offer a wide range of services that can support your IT projects
             and deuseployment. From local representation to 24 by 7 maintenance,
             we have it all. Let us be your single point of contact and we will
             handle all your IT, Audio & Visual needs.
           </p>
+        </article>
+
+        <article id="visual">
+          <h2 class="major">Visual</h2>
+
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="images/visual01.jpeg"
+              style="width: 100%"
+            />
+            <img
+              class="mySlides"
+              src="images/visual02.jpeg"
+              style="width: 100%"
+            />
+            <img
+              class="mySlides"
+              src="images/visual03.jpeg"
+              style="width: 100%"
+            />
+            <img
+              class="mySlides"
+              src="images/visual04.jpeg"
+              style="width: 100%"
+            />
+            <br />
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+            <br />
+            <br />
+          </div>
+
+          <div>
+            <p class="myDescription">
+              Smart Signage transcends the conventional viewing experience
+              through realistic and compelling content. Backed by best-in-class
+              picture quality, these displays bring creative ideas to life, and
+              enable businesses to deliver refreshing content that engages,
+              informs and entertains
+            </p>
+
+            <p class="myDescription">
+              Easily customize your content with the Samsung Business TV app.
+              Captivate your customers with eye-catching visuals that you can
+              instantly update using your phone. With your TV, guaranteed to
+              operate 16 hours a day, 7 days a week under our extended warranty,
+              you can keep audiences engaged for longer.
+            </p>
+
+            <p class="myDescription">
+              Videowall LCD videowalls create a unique large-format viewing
+              experience, elevating any business setting. Every screen is
+              factory calibrated, giving you uniform alignment, brightness and
+              color right out of the box. And our Extreme and Ultra Narrow bezel
+              widths help audiences focus on your content, not the display.
+            </p>
+
+            <p class="myDescription">
+              Interactive Deliver rich content and dynamic interaction in
+              academic or business settings with our high-impact interactive
+              digital displays
+            </p>
+          </div>
+
+          <script>
+            var slideIndex = 1
+            showDivs(slideIndex)
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n))
+            }
+
+            function showDivs(n) {
+              var i
+              var x = document.getElementsByClassName('mySlides')
+              var y = document.getElementsByClassName('myDescription')
+
+              if (n > x.length) {
+                slideIndex = 1
+              }
+              if (n < 1) {
+                slideIndex = x.length
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'none'
+                y[i].style.display = 'none'
+              }
+              x[slideIndex - 1].style.display = 'block'
+              y[slideIndex - 1].style.display = 'block'
+            }
+          </script>
+
+          <br />
         </article>
 
         <!-- Contact -->
@@ -154,7 +254,9 @@
           </ul>
           <a href="tel:011-1028-8170">Mobile: 011-1028-8170</a><br />
           <br />
-          <a target="_blank" href="mailto:sales@3-clipse.com">Email: sales@3-clipse.com</a>
+          <a target="_blank" href="mailto:sales@3-clipse.com"
+            >Email: sales@3-clipse.com</a
+          >
           <br />
           <br />
           <a target="_blank" href="https://goo.gl/maps/PmAiz4RA4hJNYwF7A">
