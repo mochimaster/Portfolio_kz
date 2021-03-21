@@ -1302,11 +1302,6 @@ input, select, textarea {
 				font-size: 2rem;
 			}
 
-		#logo {
-			border-radius: 100% !important;
-			height: 100% !important;
-		}
-
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
@@ -1667,4 +1662,9 @@ input, select, textarea {
 
 #workstation-picture {
 	background: white;
+}
+
+#logo {
+	border-radius: 100% !important;
+	height: 100% !important;
 }
