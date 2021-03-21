@@ -1668,3 +1668,7 @@ input, select, textarea {
 	border-radius: 100%;
 	height: 100%;
 }
+
+.button-container{
+	text-align: center;
+}
