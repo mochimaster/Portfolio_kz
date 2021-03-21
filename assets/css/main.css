@@ -1303,8 +1303,8 @@ input, select, textarea {
 			}
 
 		#logo {
-			border-radius: 100%;
-			height: 100%;
+			border-radius: 100% !important;
+			height: 100% !important;
 		}
 
 		#header .content {
