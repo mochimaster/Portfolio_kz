@@ -1660,9 +1660,9 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-#workstation-picture {
+/* #workstation-picture {
 	background: white;
-}
+} */
 
 #logo {
 	border-radius: 100%;
